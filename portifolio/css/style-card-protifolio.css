@@ -1,0 +1,77 @@
+/* Figurinhas da pagina */
+
+.container2 {
+    width: 1150px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.container2 .card {
+    position:relative;
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container2 .card img {
+    transition: 0.5s;
+}
+
+.container2 .card h1 {
+    font-size: 2rem;
+}
+
+.container2 .card .content2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.container2 .card .content2 p {
+    color: #666;
+    transition: 0.5s;
+}
+
+.container2 .card .content2 a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.container2 .card:hover {
+    background-color: #dc2e69;
+    color: white;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #dc2e685d;
+    border-color: #dc2e69;
+}
+
+.container2 .card:hover img {
+    filter: invert(1);
+}
+
+.container2 .card:hover .content2 p {
+    color: white;
+}
+
+.container2 .card:hover .content2 a{
+    color:black;
+    background-color: white;
+}

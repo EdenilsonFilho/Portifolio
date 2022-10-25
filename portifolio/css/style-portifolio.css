@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #342a8b, #2f2a79,#000708, #300d96);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+    
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+}
+    
+    50%{
+         background-position: 100% 50%;
+}
+    
+    100%{
+         background-position: 0% 50%;
+    }
+}
+
+.cabecalho{
+    display: flex;
+    gap: 200;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.cabecalho-menu-item:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    position:absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 24px;
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+.logo img{
+    width: 17vh;
+    height: 10vh;
+}
+
+header .menu-mobile{
+    display: none;
+    width: 30%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 99;
+}
+header .menu-mobile ul li{
+    padding: 60px 0;
+}
+header .menu-mobile ul li a{
+    text-decoration: none;
+    color: #f9fcff;
+    font-weight: 500;
+}
+header .menu_btn{
+    display: none;
+    position: fixed;
+    right: 60px;
+    z-index: 99;
+}
+header .menu_btn img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/*   Início   */
+
+#inicio .container{
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+#inicio .container .content{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 200px;
+}
+#inicio .container .content h1{
+    color: #f9fcff;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+#inicio .container .content p{
+    width: 800px;
+    color: #f9fcff;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    margin-top: 60px;
+}
+
+
+#inicio .img-inicio img{
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: -750px auto;
+    float: right;
+    padding: 35px;
+}
+
+/*   Projeto   */
+
+#projeto .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projeto .container p{
+    margin-top: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #4a75a6;
+}
+#projeto .container h1{
+  
+    font-size: 3rem;
+    font-weight: 400;
+    color: #eeeeee;
+} 
+#projeto .container .call{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#projeto .container .call .left,
+#projeto .container .call .right{
+    width: 40%;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #f1f1f1;
+    text-align: justify;
+}
+#projeto .container img{
+    width: 680px;
+    height: 420px;
+}
+
+button{
+    margin-top: 60px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #4a75a6;
+    border: none;
+    cursor: pointer;
+}
+
+/*   Contato   */
+
+#contato .container{
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+#contato .container .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+}
+
+#contato .container .center p{
+    margin-top: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #f9fcff;
+}
+#contato .container .center h1{
+    margin-top: 30px;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #f9fcff;
+}
+#contato .container .card{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+#contato .container .card .box{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+#contato .container .card .box img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+#contato .container .card .box h3{
+    color: #f9fcff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#contato .container .card .box p{
+    color: #f9fcff;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 5px;
+}
+#contato .container .card .box button{
+    padding: 10px 20px;
+    border: none;
+    background: #f9fcff;
+    color: #4a75a6;
+    cursor: pointer;
+}
+
+/*   Footer   */
+
+footer{
+    width: 100%;
+    height: 60px;
+    background: #203758;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+footer span{
+    line-height: 60px;
+    color: #f9fcff;
+}
+footer a{
+    text-decoration: none;
+    color: #4a75a6;
+}
+
+hr {
+    height:5px; 
+    border:0; 
+    background:radial-gradient(circle, tan, deeppink, black);
+	}
+
+      /*Texto inicial maquina escrever*/
+
+      .line {
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.75);
+        font-family: "Special Elite", monospace;
+        font-size: 3em;
+        text-align: center;
+        margin: -10 auto;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    
+      .typing-animation {
+        animation: blinkCursor 500ms steps(400) infinite normal,
+          typing 5s steps(400) 1s normal both;
+      }
+  
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 40em;
+        }
+      }
+  
+      @keyframes blinkCursor {
+        from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+        }
+        to {
+          border-right-color: transparent;
+        }
+      }
+  
